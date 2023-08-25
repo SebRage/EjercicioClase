@@ -1,0 +1,18 @@
+/*
+#ffeeee #ffd1dc #ff004e #4b4949 #ffffff #000000
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    top: 0;
+    font-family: "lora", serif;
+    font-size: 14px;
+}
+.header {
+    background-color: #ffeeee;
+    position: sticky;
+}
