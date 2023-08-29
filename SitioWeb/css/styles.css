@@ -15,4 +15,89 @@ body {
 .header {
     background-color: #ffeeee;
     position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 3px #ffd1dc;
+    z-index: 2;
 }
+.header .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+}
+.header .logo{
+    color: #ffeeee;
+    text-align: center;
+    padding: 0.5%;
+    flex-grow: 1;
+}
+.logo img{
+    width: 150px;
+    margin: 0 auto;
+}
+.header .menu{
+    text-align: center;
+    padding: 0.8%;
+    flex-grow: 8;
+}
+.header .buscador{
+    text-align: center;
+    padding: 0.5%;
+    flex-grow: 1;
+    list-style: none;
+}
+.item > li{
+    display: inline-block;
+    padding: 0% 2%;
+    list-style: none;
+    font-size: 18px;
+}
+.item > li a{
+    color: #000000;
+    text-decoration: none;
+}
+.item > li :hover{
+    color: #4b4949;
+    font-size: 19px;
+    text-shadow: #ffd1dc 2px 3px;
+}
+.buscarOculto{
+    padding: 0;
+    width: 0;
+    border: 0;
+    outline: none;
+    transition: all 0.5s linear;
+}
+.buscarVisible{
+    width: auto;
+    margin-right: 10px;
+    border-radius: 8%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    transition: all 0.5s linear;
+}
+/************************************Seccion Principal / main**************************/
+.main .h1{
+    width: 40%;
+    padding: 1%;
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 1%;
+}
+.main > .container_p{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0.1%;
+    overflow-y: scroll;
+    background-image: linear-gradient(50deg,#4b49491a 15%, #ffd1dc5a), url(../img/gafas.png) ;
+}
+
+
+
