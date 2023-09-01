@@ -1,17 +1,20 @@
 /*
 #ffeeee #ffd1dc #ff004e #4b4949 #ffffff #000000
 */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*Acomoda la caja*/
 }
+
 body {
     position: relative;
     top: 0;
     font-family: "lora", serif;
     font-size: 14px;
 }
+
 .header {
     background-color: #ffeeee;
     position: sticky;
@@ -21,7 +24,8 @@ body {
     box-shadow: 0px 2px 3px #ffd1dc;
     z-index: 2;
 }
-.header .container{
+
+.header .container {
     width: 100%;
     height: auto;
     display: flex;
@@ -29,50 +33,59 @@ body {
     align-items: center;
     z-index: 100;
 }
-.header .logo{
+
+.header .logo {
     color: #ffeeee;
     text-align: center;
     padding: 0.5%;
     flex-grow: 1;
 }
-.logo img{
+
+.logo img {
     width: 150px;
     margin: 0 auto;
 }
-.header .menu{
+
+.header .menu {
     text-align: center;
     padding: 0.8%;
     flex-grow: 8;
 }
-.header .buscador{
+
+.header .buscador {
     text-align: center;
     padding: 0.5%;
     flex-grow: 1;
     list-style: none;
 }
-.item > li{
+
+.item>li {
     display: inline-block;
     padding: 0% 2%;
     list-style: none;
     font-size: 18px;
 }
-.item > li a{
+
+.item>li a {
     color: #000000;
     text-decoration: none;
 }
-.item > li :hover{
+
+.item>li :hover {
     color: #4b4949;
     font-size: 19px;
     text-shadow: #ffd1dc 2px 3px;
 }
-.buscarOculto{
+
+.buscarOculto {
     padding: 0;
     width: 0;
     border: 0;
     outline: none;
     transition: all 0.5s linear;
 }
-.buscarVisible{
+
+.buscarVisible {
     width: auto;
     margin-right: 10px;
     border-radius: 8%;
@@ -81,23 +94,204 @@ body {
     padding: 10px;
     transition: all 0.5s linear;
 }
+
 /************************************Seccion Principal / main**************************/
-.main .h1{
+.main .h1 {
     width: 40%;
     padding: 1%;
     font-size: 55px;
     font-weight: 600;
     margin-top: 1%;
 }
-.main > .container_p{
+
+.main>.container_p {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 0.1%;
     overflow-y: scroll;
-    background-image: linear-gradient(50deg,#4b49491a 15%, #ffd1dc5a), url(../img/gafas.png) ;
+    background-attachment: fixed;
+    background-image: linear-gradient(50deg, #4b49491a 15%, #ffd1dc5a), url(../img/gafas.png);
 }
 
+.container_p .offert {
+    width: 80%;
+    font-size: 26px;
+    padding: 1.5%;
+    text-align: justify;
+    background-color: #f0f8ff59;
+    font-weight: 700;
+    border-radius: 10px;
+}
 
+.container_button {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5%;
+}
 
+.container_button .button_lp {
+    padding: 25px;
+    background-color: #4b4949;
+    border: 1px solid #222121;
+    border-radius: 7%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.container_button .button_lp:hover {
+    background-color: #ff004e;
+    border: 1px solid #c51348;
+    border-radius: 3%;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.containers {
+    padding: 3%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.up {
+    width: 10%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #ffd1dc;
+    border: 1px solid #daaeb8;
+    border-radius: 7%;
+    color: #4b4949;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+}
+
+.up:hover {
+    /* Tarea hacerlo*/
+}
+
+.container_history>p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.subTitle {
+    font-size: 34px;
+    color: #4b4949;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-bottom: 2px solid #ff004e;
+}
+
+.service>i {
+    font-size: 55px;
+}
+
+.service .subService {
+    margin-bottom: 3%;
+    margin-bottom: 2%;
+    color: #ff004e;
+    font-size: 24px;
+}
+
+.service {
+    width: 32%;
+    display: inline-block;
+    padding: 10px;
+    /*Tarea card/ ponerlas como card*/
+}
+
+.form {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    padding: 20px 5px;
+    border: 1px solid #4b4949;
+}
+
+.form * {
+    width: 85%;
+    display: inline-block;
+    margin: 1% 0;
+    font-size: 20px;
+}
+
+.form>label {
+    text-align: left;
+    padding: 5px;
+}
+
+.labelPolitica {
+    width: 50%;
+    display: inline-block;
+}
+
+/*CheckBox*/
+input[type="checkbox"] {
+    visibility: hidden;
+}
+.check{
+    display: inline-block;
+    position: relative;
+    margin: 3%;
+    width: 24%;
+    height: 40px;
+    background: #ff004e;
+    border-radius: 10px;
+}
+.check label{
+    /*Aspecto*/
+    display: block;
+    width: 40%;
+    height: 70%;
+    border-radius: 17px;
+    box-shadow: 0px 2px 5px 0px #00000059;
+    background: #fcfff4;
+    background: linear-gradient(to top, #fcfff4 3%, #d9d8d2 40%, #b3bead 100%);
+    cursor: pointer;
+    /*Posicionamiento*/
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    /*Comportamiento*/
+    transition: all 1.5s ease;
+}
+.check input[type="checkbox"]:checked + label {
+    left: auto;
+    right: 8px;
+}
+.check:after{
+    content: 'NO';
+    font: 14px/30px arial, sans-serif;
+    color: #ffd1dc;
+    margin: 2%;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+.check:before{
+    content: 'SI';
+    font: 14px/30px arial, sans-serif;
+    margin: 2%;
+    color: #ffd1dc;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    font-weight: bold;
+    /*MEJORAR LA POSICION DEL NO*/
+}
