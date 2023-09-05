@@ -160,14 +160,14 @@ body {
 }
 .up:hover {
     /* Tarea hacerlo*/
-    background-color: #fab8c7;
-    border: 1px solid #52474a;
+    background-color: #4b4949;
+    border: 1px solid #ffffff;
     border-radius: 4%;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.5s linear;
+    transition: all 0.5s unset linear;
 }
 .container_history>p {
     font-size: 20px;
@@ -194,10 +194,12 @@ body {
     width: 32%;
     display: inline-block;
     padding: 10px;
+    margin: 5px;
     border: 2px solid #000000;
     background-color: #fab8c7;
-    border-radius: 3%;
-    box-shadow:  2px 2px 4px #4b4949;
+    border-radius: 10%;
+    transition: transform 0.3s, background-color 0.5s;
+    transform-origin: center;
 }
 .service:hover{
     width: 32%;
@@ -205,8 +207,7 @@ body {
     padding: 10px;
     border: 2px solid #776e6e;
     background-color: #fd4e7795;
-    border-radius: 3%;
-    transition: all 0.5s linear;
+    border-radius: 22%;
 }
 .form {
     width: 40%;
@@ -224,6 +225,12 @@ body {
 .form>label {
     text-align: left;
     padding: 5px;
+}
+.form > input{
+    padding: 10px 2px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ff004e;
 }
 .labelPolitica {
     width: 50%;
@@ -283,4 +290,72 @@ input[type="checkbox"] {
     left: 10px;
     z-index: 0;
     font-weight: bold;
+}
+.button_send, .button_clear{
+    display: inline;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 4%;
+    background-color: #ffd1dc;
+    border: 1px solid #ca99a4;
+    border-radius: 5%;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.is-valid{
+    background-color: #ffd1dc !important;
+    border-bottom: 1px solid #ff004e !important;
+}
+.is-invalid{
+    border-bottom: 5px solid #f81818 !important;
+}
+.elements_contact{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+iframe{
+    width: 50%;
+    margin-left: 2%;
+    height: 400px;
+    border: 1px solid #4b4949;
+}
+.container_acercade{
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+.footer{
+    width: 100%;
+    background-color: #4b4949;
+    color: #ffffff;
+    margin-top: 1%;
+    overflow-x: auto;
+}
+.footer .container_footer{
+    padding-top: 2%;
+    text-align: center;
+    margin: 2%;
+}
+.container_footer > h2{
+    color: #ffffff;
+}
+.container_footer > p{
+    font-size: 18px;
+}
+.social_net{
+    list-style: none;
+    text-align: center;
+}
+.social_net > li{
+    display: inline-block;
+    padding: 2%;
+}
+.nets{
+    width: 40px;
 }
