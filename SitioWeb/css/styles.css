@@ -179,7 +179,6 @@ body {
 }
 
 .up:hover {
-    /* Tarea hacerlo*/
     background-color: #4b4949;
     border: 1px solid #ffffff;
     border-radius: 4%;
@@ -347,7 +346,7 @@ input[type="checkbox"] {
 
 .is-valid {
     background-color: #ffd1dc !important;
-    border-bottom: 1px solid #ff004e !important;
+    border-bottom: 1px solid #083f0c !important;
 }
 
 .is-invalid {
@@ -378,8 +377,8 @@ iframe {
 }
 
 #listPrice {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    padding: 10px;
 }
 
 .list-group li {
@@ -389,7 +388,7 @@ iframe {
     background-color: #ffd1dc;
     border-radius: 5px;
     display: inline-block;
-    border-radius: 25%;
+    border-radius: 22%;
 }
 
 .list-group li:hover {
